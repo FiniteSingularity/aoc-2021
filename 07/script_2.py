@@ -1,6 +1,8 @@
 import statistics
 import math
 
+# 1 + 2 + ... + n
+
 
 def additorial(n):
     return n * (n+1) / 2

@@ -4,6 +4,7 @@ import math
 with open('./input', encoding='utf8') as file:
     positions = [int(value) for value in file.readline().split(',')]
 
+# Brute Force-ish
 max_position = max(positions)
 min_position = min(positions)
 mean_position = statistics.mean(positions)
@@ -21,6 +22,7 @@ for alignment in rng:
 
 print(min_fuel)
 
+# But it also turns out that the median value is the proper position.
 median_position = statistics.median(positions)
 alignment = median_position
 fuel = [abs(position-alignment) for position in positions]
