@@ -31,7 +31,7 @@ active_nodes = [
 
 #  {"coord": [52, 50], "risk": 123, "from": [51, 50]}
 
-with open('./15/input_test', encoding='utf8') as file:
+with open('./input', encoding='utf8') as file:
     for line in file.readlines():
         risk_map.append([int(val) for val in line.strip()])
 
